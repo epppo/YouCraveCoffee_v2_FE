@@ -1,14 +1,15 @@
 import Router from "./Router";
 import Header from "./component/common/Header";
-import styled from "styled-components";
+import DefaultLayout from "./styles/DefaultLayout";
+
 function App() {
   return (
-    <Wrap>
+    <DefaultLayout>
       <Header />
       <Router />
-    </Wrap>
+    </DefaultLayout>
   );
 }
 
 export default App;
-const Wrap = styled.div``;
+
